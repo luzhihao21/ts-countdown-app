@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# 倒计时应用 / カウントダウンアプリ / Countdown App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 中文
 
-Currently, two official plugins are available:
+### 项目简介
+一个基于 React + TypeScript 开发的倒计时 Web 应用。输入目标日期后，页面会实时显示距离该日期的剩余天数、小时、分钟和秒数。页面右侧有一个全屏弹跳的飘窗动画。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 技术栈
+- React 19
+- TypeScript
+- Vite
+- localStorage（本地存储日期）
 
-## React Compiler
+### 功能
+- 实时倒计时（精确到秒）
+- 自动保存目标日期
+- 全屏弹跳飘窗动画
+- 部署于 GitHub Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 在线访问
+https://luzhihao21.github.io/ts-countdown-app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 日本語
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### プロジェクト概要
+React と TypeScript を使って開発したカウントダウン Web アプリです。目標日付を入力すると、残り日数・時間・分・秒をリアルタイムで表示します。画面上を自由に動き回るフローティングボックスのアニメーションも実装しています。
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 技術スタック
+- React 19
+- TypeScript
+- Vite
+- localStorage（日付の保存）
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 機能
+- リアルタイムカウントダウン（秒単位）
+- 目標日付の自動保存
+- 全画面バウンスアニメーション
+- GitHub Pages にデプロイ済み
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### アクセス
+https://luzhihao21.github.io/ts-countdown-app/
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## English
+
+### Overview
+A countdown web application built with React and TypeScript. Enter a target date and the app displays the remaining days, hours, minutes, and seconds in real time. Features a bouncing floating box animation across the full screen.
+
+### Tech Stack
+- React 19
+- TypeScript
+- Vite
+- localStorage (for saving the target date)
+
+### Features
+- Real-time countdown (down to seconds)
+- Auto-saves target date
+- Full-screen bouncing animation
+- Deployed on GitHub Pages
+
+### Live Demo
+https://luzhihao21.github.io/ts-countdown-app/
